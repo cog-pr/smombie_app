@@ -30,7 +30,7 @@
 ##  システム構成
 
 ```
-Smombie_App/
+smombie_app/
 ├── app/
 │   ├── main.py                    # メインアプリケーション・ナビゲーション
 │   ├── requirements.txt           # Python依存パッケージ
@@ -103,8 +103,8 @@ Smombie_App/
 
 1. **リポジトリをクローン**
    ```bash
-   git clone https://github.com/cog-pr/Smombie_App.git
-   cd Smombie_App
+   git clone https://github.com/cog-pr/smombie_app.git
+   cd smombie_app
    ```
 
 2. **依存パッケージをインストール**
