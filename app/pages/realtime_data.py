@@ -248,7 +248,7 @@ if st.session_state["login"]:
     with st.sidebar:
         st.header("スライドパラメータ")
         st.write(f"ウィンドウサイズ: {st.session_state['window_size']}")
-        st.write(f"ストライド: {st.session_state["stride"]}")
+        st.write(f"ストライド: {st.session_state['stride']}")
 
         st.header("メール送信")
         if st.session_state["email_send_timing"] == 1:
