@@ -44,7 +44,7 @@ def send_mail():
 
             # stride と sampling_rate（60Hz）から時間計算
             stride = st.session_state.get("stride", 30)
-            sampling_rate = 60  # Phyphox想定
+            sampling_rate = 60  # phyphox想定
 
             dw_sec = dw_count * (stride / sampling_rate)   # 秒
             dw_min = dw_sec / 60                           # 分
@@ -134,7 +134,7 @@ def pred_data(data, model):
         st.error(f"予測エラー : {e}")
         return "Error"
 
-# --- Phyphoxのデータ取得 ---
+# --- phyphoxのデータ取得 ---
 def phyphox_get_data(IP):
     url = "http://" + IP + "/get?"
     try:
@@ -256,7 +256,7 @@ if st.session_state["login"]:
         else:
             st.write("歩きスマホ検知後に即時メール送信")
 
-    st.subheader("PhyphoxのリモートアクセスIPを入力")
+    st.subheader("phyphoxのリモートアクセスIPを入力")
 
     if "IP" not in st.session_state:
         st.session_state["IP"] = None

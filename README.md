@@ -21,7 +21,7 @@
 ### 主な機能
 
 -  **機械学習モデル作成** - ランダムフォレストを用いた歩行状態分類モデルの学習
--  **リアルタイム予測** - Phyphoxアプリと連携したリアルタイムセンサーデータの処理
+-  **リアルタイム予測** - phyphoxアプリと連携したリアルタイムセンサーデータの処理
 -  **警告メール送信** - 歩きスマホ検知時の即時メール通知
 -  **ユーザー管理** - アカウント登録・ログイン・設定カスタマイズ機能
 
@@ -63,7 +63,7 @@ Smombie_App/
 | **可視化** | matplotlib |
 | **データベース** | SQLite (SQLAlchemy) |
 | **メール送信** | yagmail |
-| **センサーデータ取得** | Phyphox (外部アプリ) |
+| **センサーデータ取得** | phyphox (外部アプリ) |
 
 ---
 
@@ -183,7 +183,7 @@ docker run -p 8501:8501 smombie-app
 5. 学習済みモデル（.pkl）をダウンロード
 
 #### 3. リアルタイム処理ページ
-1. スマートフォンで[Phyphox](https://phyphox.org/)アプリを起動
+1. スマートフォンで[phyphox](https://phyphox.org/)アプリを起動
 2. リモートアクセスを有効化してIPアドレスを取得
 3. アプリにIPアドレスを入力
 4. 学習済みモデル（.pkl）をアップロード
@@ -215,13 +215,13 @@ docker run -p 8501:8501 smombie-app
 
 ---
 
-## Phyphox連携
+## phyphox連携
 
-[Phyphox](https://phyphox.org/) は、スマートフォンの各種センサーデータを取得できる無料アプリです。
+[phyphox](https://phyphox.org/) は、スマートフォンの各種センサーデータを取得できる無料アプリです。
 
 ### 対応デバイス
-- **iPhone**: iOS版 Phyphox
-- **Android**: Android版 Phyphox
+- **iPhone**: iOS版 phyphox
+- **Android**: Android版 phyphox
 
 ### 使用するセンサー
 - 線形加速度センサー（X, Y, Z軸）
