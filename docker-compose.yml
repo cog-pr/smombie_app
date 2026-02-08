@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  smombie-app:
+    build: .
+    container_name: smombie-app
+    ports:
+      - "8501:8501"
+    volumes:
+      # secrets.tomlをマウント（ローカルで作成が必要）
+      - ./app/.streamlit/secrets.toml:/app/app/.streamlit/secrets.toml:ro
+      # データベースを永続化
+      - ./app/db:/app/app/db
+    restart: unless-stopped
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0

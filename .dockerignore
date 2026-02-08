@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets（secrets.tomlはdocker-compose経由でマウント）
+app/.streamlit/secrets.toml
+
+# その他
+*.log
+*.tmp
+*.temp
+README.md
+参考サイト.txt
+起動用.bat
