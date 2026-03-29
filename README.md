@@ -55,15 +55,25 @@ smombie_app/
 
 ##  技術スタック
 
-| カテゴリ | 技術 |
-|---------|------|
-| **フレームワーク** | Streamlit 1.51.0 |
-| **機械学習** | scikit-learn 1.7.2 (RandomForest) |
-| **データ処理** | pandas, numpy, scipy |
-| **可視化** | matplotlib |
-| **データベース** | SQLite (SQLAlchemy) |
-| **メール送信** | yagmail |
-| **センサーデータ取得** | phyphox (外部アプリ) |
+| カテゴリ | 技術・ツール | 用途 |
+|---------|------------|------|
+| **言語** | Python | — |
+| **フレームワーク / UI** | Streamlit | WebアプリのUI構築 |
+| | streamlit-pdf | PDF表示 |
+| **機械学習** | scikit-learn | ランダムフォレスト（学習・評価・推論） |
+| **データ処理** | pandas | データ操作・特徴量抽出 |
+| | NumPy | 数値計算・配列操作 |
+| | scipy | 四分位範囲（IQR）算出 |
+| | openpyxl | Excelファイル読み込み |
+| **可視化** | matplotlib | グラフ・混同行列・GIFアニメーション生成 |
+| | Pillow | GIF書き出し処理 |
+| **データベース** | SQLite | ユーザー情報の永続化 |
+| | SQLAlchemy | PythonからSQLiteへの接続・操作 |
+| **センサーデータ取得** | phyphox | スマホセンサーのREST API |
+| | requests | phyphoxへのHTTPリクエスト |
+| **通知** | yagmail | 歩きスマホ検知時のメール自動送信 |
+| **セキュリティ** | hashlib（標準ライブラリ） | パスワードのSHA-256ハッシュ化 |
+| **モデル保存** | pickle（標準ライブラリ） | 学習済みモデルのシリアライズ |
 
 ---
 
